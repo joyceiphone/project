@@ -8,8 +8,8 @@ create table part.item
 (
 	id serial not null primary key,
 	item_name varchar(50) not null,
-	parent_item int references item(id),
-	cost int not null,
+	parent_item integer references item(id),
+	cost integer not null,
 	req_date date not null
 );
 
